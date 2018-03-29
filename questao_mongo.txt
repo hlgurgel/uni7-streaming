@@ -1,0 +1,25 @@
+> db.users.aggregate([{$group:{ _id: { occupation: "$occupation"}, quantidade_usuarios: { $sum: 1 } }}])
+{ "_id" : { "occupation" : "doctor" }, "quantidade_usuarios" : 7 }
+{ "_id" : { "occupation" : "healthcare" }, "quantidade_usuarios" : 16 }
+{ "_id" : { "occupation" : "none" }, "quantidade_usuarios" : 9 }
+{ "_id" : { "occupation" : "engineer" }, "quantidade_usuarios" : 67 }
+{ "_id" : { "occupation" : "homemaker" }, "quantidade_usuarios" : 7 }
+{ "_id" : { "occupation" : "marketing" }, "quantidade_usuarios" : 26 }
+{ "_id" : { "occupation" : "artist" }, "quantidade_usuarios" : 28 }
+{ "_id" : { "occupation" : "librarian" }, "quantidade_usuarios" : 51 }
+{ "_id" : { "occupation" : "entertainment" }, "quantidade_usuarios" : 18 }
+{ "_id" : { "occupation" : "scientist" }, "quantidade_usuarios" : 31 }
+{ "_id" : { "occupation" : "salesman" }, "quantidade_usuarios" : 12 }
+{ "_id" : { "occupation" : "educator" }, "quantidade_usuarios" : 95 }
+{ "_id" : { "occupation" : "lawyer" }, "quantidade_usuarios" : 12 }
+{ "_id" : { "occupation" : "student" }, "quantidade_usuarios" : 196 }
+{ "_id" : { "occupation" : "programmer" }, "quantidade_usuarios" : 66 }
+{ "_id" : { "occupation" : "administrator" }, "quantidade_usuarios" : 79 }
+{ "_id" : { "occupation" : "writer" }, "quantidade_usuarios" : 45 }
+{ "_id" : { "occupation" : "retired" }, "quantidade_usuarios" : 14 }
+{ "_id" : { "occupation" : "executive" }, "quantidade_usuarios" : 32 }
+{ "_id" : { "occupation" : "other" }, "quantidade_usuarios" : 105 }
+Type "it" for more
+> it
+{ "_id" : { "occupation" : "technician" }, "quantidade_usuarios" : 27 }
+
